@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Portifolio</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<section class="section-container section-presentation">
+		
+		<p class="highlight highlight-bigger">
+			<strong>Hi. </strong>My name is Marlysson Silva
+		</p>	
+
+		<div class="presentation">
+			<p>Hi, nice to meet you.</p>
+			
+			<p>I'm 20 years old. With knowledge in <strong class="highlight highlight-small">Frontend development</strong> using the most current technologies and also <strong class="highlight highlight-small">Backend development</strong> using Python + Django mainly.
+			</p>
+
+		</div>
+
+	<nav>
+		<ul>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Facebook</a></li>
+			<li><a href="#">Github</a></li>
+			<li><a href="#">Twitter</a></li>
+			<li><a href="#">Codepen</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#" class="email-action">Email</a></li>
+		</ul>
+	</nav>
+
+		<p class="email-text highlight">marlysson5@gmail.com</p>
+
+		<a href="#" class="next-section"></a>
+
+	</section>
+
+	<section class="section-container">
+			
+			<h2 class="title-section">My Skills</h2>
+
+			<div class="type-skill">
+				<section class="container-skill">
+					<p class="title-sub-section">Frontend developer</p>
+
+					<ul class="skills">
+						<li class="skill">HTML5</li>
+						<li class="skill">CSS3</li>	
+						<li class="skill">Javascript</li>	
+						<li class="skill">ReactJS</li>	
+						<li class="skill">VueJS</li>	
+						<li class="skill">Responsive website</li>	
+						<li class="skill">AngularJS</li>	
+						<li class="skill">RethinkDB</li>	
+						
+					</ul>
+
+				</section>
+
+				<section class="container-skill">
+					<p class="title-sub-section">Backend developer</p>
+
+					<ul class="skills">
+						<li class="skill">Python</li>
+						<li class="skill">PHP</li>	
+						<li class="skill">SQL</li>
+						<li class="skill">NodeJs</li>
+						<li class="skill">Django</li>
+						<li class="skill">Web2py</li>
+						<li class="skill">Git</li>
+					</ul>
+
+				</section>
+
+				<section class="container-skill">
+					<p class="title-sub-section">Interests</p>
+
+					<ul class="skills">
+						<li class="skill">Data Structure</li>
+						<li class="skill">Machine Learning</li>
+						<li class="skill">Math</li>	
+						<li class="skill">Data Analysis</li>
+						<li class="skill">Algorithms</li>
+						</ul>
+				</section>
+
+				<section class="container-skill"></section>
+			</div>
+			
+	</section>
+
+
+<script type="text/javascript">
+	
+	email = document.querySelector('.email-action');
+	email_text = document.querySelector('.email-text');
+
+	next_section = document.querySelector('.next-section');
+
+	email.addEventListener('click',function(event){
+
+		event.preventDefault();
+
+		email_text.style.opacity = '1';
+	});
+
+
+</script>
+
+</body>
+</html>
