@@ -227,3 +227,8 @@ nav li:hover a{
 	border:1px solid #fff;
 	transition: 0.3s all;
 }
+
+.skill:hover{
+	color:#0ba191;
+	border-color:#0ba191;
+}
