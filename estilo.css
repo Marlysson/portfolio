@@ -167,7 +167,7 @@ nav li:hover a{
 }
 
 .title-section{
-	padding:30px 100px 20px;
+	padding:60px 120px 20px;
 	font-size:35px;
 }
 
@@ -181,23 +181,24 @@ nav li:hover a{
 	content:" ";
 	display: inline-block;
 	position:relative;
-	width:7px;
-	height:35px;
 	background:#0ba191;
+	width:7px;
 }
 
 .title-section:before{
+	height:32px;
 	top:4px;
 	right:10px;
 }
 
 .title-sub-section:before{
-	top:10px;
+	height:20px;
+	top:3px;
 	right:6px;
 }
 
 .type-skill{
-	text-align: center;	
+	text-align: left;	
 }
 
 .container-skill{
@@ -213,6 +214,13 @@ nav li:hover a{
 .container-skill:first-child{
 	margin-top:20px;
 }
+
+.container-skill:nth-child(2n+1){
+	margin-left:105px;
+	margin-right:30px;
+	/*background:black;*/
+}
+
 .skills{
 	list-style: none;
 	text-align: left;
@@ -231,4 +239,5 @@ nav li:hover a{
 .skill:hover{
 	color:#0ba191;
 	border-color:#0ba191;
+	cursor:pointer;
 }
