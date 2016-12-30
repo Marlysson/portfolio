@@ -72,7 +72,7 @@
 	cursor:pointer;
 
 	animation-name:animation;
-	animation-duration: 0.8s;
+	animation-duration: 1s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 
@@ -82,24 +82,25 @@
 @keyframes animation{
 	0%{
 		position:absolute;
-		bottom:100px;
+		bottom:60px;
 	}
 
 	50%{
 		position:absolute;
-		bottom:95px;
+		bottom:55px;
 	}
 
 	100%{
 		position:absolute;
-		bottom:100px;
+		bottom:60px;
 	}
 }
 
 .highlight-bigger{
 	display:inline-block;
 	padding:25px;
-
+	margin-top:-40px;
+	margin-bottom:40px;
 	font-size:45px;
 	border:1px solid #0ba191;
 }
