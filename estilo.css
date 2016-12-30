@@ -72,7 +72,7 @@
 	cursor:pointer;
 
 	animation-name:animation;
-	animation-duration: 0.5s;
+	animation-duration: 0.8s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 
@@ -85,9 +85,14 @@
 		bottom:100px;
 	}
 
-	100%{
+	50%{
 		position:absolute;
 		bottom:95px;
+	}
+
+	100%{
+		position:absolute;
+		bottom:100px;
 	}
 }
 
@@ -186,8 +191,8 @@ nav li:hover a{
 }
 
 .title-section:before{
-	height:32px;
-	top:4px;
+	height:28px;
+	top:1px;
 	right:10px;
 }
 
