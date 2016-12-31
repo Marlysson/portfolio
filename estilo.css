@@ -47,6 +47,9 @@
 	background:#bdc3c7;
 }
 
+.section-container:last-of-type:after{
+	display: none;
+}
 
 .section-presentation{
 	text-align: center;
@@ -165,7 +168,6 @@ nav li:hover a{
 	transition:0.2s opacity, 0.5s margin;
 
 }
-
 .show_email{
 	opacity: 1;
 	transition:;
@@ -289,12 +291,29 @@ nav li:hover a{
 	cursor:pointer;
 }
 
+.overlay-job:after{
+	content:"+";
+	font-size:60px;
+	color:#fff;
+}
+
 .item-job:hover .overlay-job{
 	left:0;
 }
 
-.plus-signal{
-	font-size:60px;
-	color:rgba(236,240,241,0.8);
-	transition:0.1s all;
+
+@media screen and (max-width:360px){
+
+	.title-section{
+		padding:15px 10px;
+	}
+
+	.container-skill,.container-skill:nth-child(2n+1){
+		width:100%;
+		margin:10px 0;
+	}
+
+	.container-skill:last-child{
+		display: none;
+	}
 }

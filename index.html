@@ -102,19 +102,19 @@
 
 		<ul class="job-list">
 			<li class="item-job">
-				<div class="overlay-job"><span class="plus-signal">+</span></div>
+				<div class="overlay-job"></div>
 			</li>	
 			<li class="item-job">
-				<div class="overlay-job"><span class="plus-signal">+</span></div>
+				<div class="overlay-job"></div>
 			</li>	
 			<li class="item-job">
-				<div class="overlay-job"><span class="plus-signal">+</span></div>
+				<div class="overlay-job"></div>
 			</li>	
 			<li class="item-job">
-				<div class="overlay-job"><span class="plus-signal">+</span></div>
+				<div class="overlay-job"></div>
 			</li>	
 			<li class="item-job">
-				<div class="overlay-job"><span class="plus-signal">+</span></div>
+				<div class="overlay-job"></div>
 			</li>	
 		</ul>
 		
@@ -136,7 +136,18 @@
 		email_text.style.opacity = '1';
 	});
 
+</script>
 
+<script type="text/javascript">
+	
+	var details = document.querySelectorAll('.overlay-job');
+	
+	details.forEach(function(detail){
+
+		detail.addEventListener('mousemove',function(event){
+			console.log(event.offsetX+","+event.offsetY);
+		})
+	});
 </script>
 
 </body>
