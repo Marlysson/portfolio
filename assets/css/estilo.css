@@ -1,24 +1,24 @@
 @font-face{
 	font-family: Open Sans;
-	src:url(fonts/OpenSans-Bold.ttf);
+	src:url(../fonts/OpenSans-Bold.ttf);
 	font-style: bold;
 }
 
 @font-face{
 	font-family: Open Sans;
-	src:url(fonts/OpenSans-Italic.ttf);
+	src:url(../fonts/OpenSans-Italic.ttf);
 	font-style: italic;
 }
 
 @font-face{
 	font-family: Open Sans;
-	src:url(fonts/OpenSans-Light.ttf);
+	src:url(../fonts/OpenSans-Light.ttf);
 	font-style: lighter;
 }
 
 @font-face{
 	font-family: Open Sans;
-	src:url(fonts/OpenSans-Regular.ttf);
+	src:url(../fonts/OpenSans-Regular.ttf);
 	font-style: regular;
 }
 
@@ -149,7 +149,7 @@ nav a{
 }
 
 nav li , nav a{
-	transition:0.2s all;	
+	transition:0.2s all;
 }
 
 nav li:hover{
@@ -170,7 +170,7 @@ nav li:hover a{
 }
 .show_email{
 	opacity: 1;
-	transition:;
+	transition: 0.3s;
 }
 .title-section , .title-sub-section{
 	text-align: left;
@@ -210,7 +210,7 @@ nav li:hover a{
 }
 
 .type-skill{
-	text-align: left;	
+	text-align: left;
 }
 
 .container-skill{
@@ -269,26 +269,39 @@ nav li:hover a{
 	border:1px solid #fff;
 	margin:20px 12px;
 	position:relative;
-
 	overflow:hidden;
 }
 
-.overlay-job{
+.overlay-job {
 	position: absolute;
-	bottom:0;
-	left:100%;
-	
 	width:100%;
 	height:100%;
 	background:rgba(11,161,145,0.2);
-
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-
-	transition:0.3s all;
 	cursor:pointer;
+}
+
+.overlay-job-1 {
+	top: -100%;
+	left: 0;
+}
+
+.overlay-job-2 {
+	top: 0;
+	left: -100%;
+}
+
+.overlay-job-3 {
+	top: 0;
+	left: 100%;
+}
+
+.overlay-job-4 {
+	top: 100%;
+	left: 0;
 }
 
 .overlay-job:after{
@@ -297,10 +310,45 @@ nav li:hover a{
 	color:#fff;
 }
 
+/*
 .item-job:hover .overlay-job{
 	left:0;
 }
+*/
 
+.getpos {
+	/*
+	background-color: #ff9900; */
+	position: absolute;
+}
+
+.getpos-top {
+	width: 100%;
+	height: 10%;
+	top: 0;
+	border-radius: 0 0 100% 100%;
+}
+
+.getpos-left {
+	width: 10%;
+	height: 100%;
+	left: 0;
+	border-radius: 0 100% 100% 0;
+}
+
+.getpos-right {
+	width: 10%;
+	height: 100%;
+	right: 0;
+	border-radius: 100% 0 0 100% ;
+}
+
+.getpos-bottom {
+	width: 100%;
+	height: 10%;
+	bottom: 0;
+	border-radius:100% 100% 0 0;
+}
 
 @media screen and (max-width:360px){
 
