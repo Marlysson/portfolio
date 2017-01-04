@@ -365,3 +365,57 @@ nav li:hover a{
 		display: none;
 	}
 }
+
+.item-job:last-child{
+	text-align: center;
+	border:none;
+}
+
+.eye{
+	display: inline-block;
+	width:40px;
+	height:55px;
+	background:white;
+	border-radius:50%;
+	margin:30px 3px;
+
+	text-align:right;
+	overflow:hidden;
+	position:relative;
+}
+
+.eye-into{
+	background:black;
+	display: block;
+	width:20px;
+	height:30px;
+	border-radius:50%;
+	position:absolute;
+
+	animation-name: animation-eye-into;
+	animation-iteration-count: infinite;
+	animation-duration: 1.7s;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+}
+
+@keyframes animation-eye-into{
+	0%{
+		position:absolute;
+		bottom:0;
+		right:-2px;
+	}
+
+	100%{
+		position:absolute;
+		bottom:25px;
+		right: -2px;
+	}
+}
+
+.item-job:last-child .message{
+	display: block;
+	color:#fff;
+	text-transform: capitalize;
+	margin-top:-10px;
+}
