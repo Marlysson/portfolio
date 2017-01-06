@@ -377,7 +377,7 @@ nav li:hover a{
 	height:55px;
 	background:white;
 	border-radius:50%;
-	margin:30px 3px;
+	margin:20px 3px 15px;
 
 	text-align:right;
 	overflow:hidden;
@@ -414,8 +414,20 @@ nav li:hover a{
 }
 
 .item-job:last-child .message{
+	font-size: 17px; 
 	display: block;
-	color:#fff;
-	text-transform: capitalize;
-	margin-top:-10px;
+	color:#0ba191;
+	font-weight: bold;
+	position: relative;
+}
+
+.item-job:last-child .message:after{
+	content:"";
+	position:absolute;
+	left:50%;
+	bottom:-10px;
+	margin-left:-20px;
+	width:40px;
+	height:2px;
+	background:#0ba191;
 }
