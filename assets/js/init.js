@@ -91,3 +91,20 @@ email = document.querySelector('.email-action');
 			activated = true;
 		});
 	});
+
+(function(){
+
+	var born_in = 1996;
+	var place = document.querySelector('.age');
+
+	var today = new Date();
+	var month = today.getMonth();
+	var age = today.getFullYear() - born_in;
+
+	if (month < 4){
+		age = age - 1;
+	}
+
+	place.textContent = age;
+
+})()
